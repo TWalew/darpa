@@ -1,0 +1,63 @@
+.game-wrapper{
+  .Game{
+    .player{
+      position: relative;
+      width: 100px;
+      height: 100px;
+      //background-color: white;
+      background-image: url("../styles/StickMan.png");
+      background-size: 100%;
+      margin: 10px auto 0  auto;
+    }
+    .left, .right{
+      p{
+        font-size: 20px;
+      }
+      span{
+        font-size: 18px;
+      }
+    }
+    .left{
+      border-right: 1px solid black;
+      .rope1{
+        z-index: 0;
+        position: absolute;
+        width: 270px;
+        border: 1px solid orange;
+        bottom: 50px;
+        left: 300px;
+      }
+    }
+    .right{
+      border-left: 1px solid black;
+      .rope2{
+        z-index: 0;
+        position: absolute;
+        width: 270px;
+        border: 1px solid orange;
+        bottom: 50px;
+        left: 0;
+      }
+    }
+  }
+  .hr{
+    border:1px solid black;
+  }
+  .legend{
+    margin: 20px auto;
+    h6{
+      margin-bottom: 20px;
+    }
+    span{
+      border: 1px solid black;
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+  }
+  .Modal{
+    .modal-wrapper{
+      font-size: 100px;
+      color:lime;
+    }
+  }
+}
